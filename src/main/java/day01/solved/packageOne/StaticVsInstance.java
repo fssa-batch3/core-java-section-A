@@ -1,7 +1,7 @@
 /**
  * 
  */
-package day01.solved;
+package day01.solved.packageOne;
 
 /**
  * @author Vinit Gore

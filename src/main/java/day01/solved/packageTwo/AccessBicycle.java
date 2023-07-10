@@ -1,9 +1,9 @@
 /**
  * 
  */
-package day01.solved2;
+package day01.solved.packageTwo;
 
-import day01.solved.Bicycle;
+import day01.solved.packageOne.Bicycle;
 
 /**
  * @author Vinit Gore
