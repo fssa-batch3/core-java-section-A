@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fssa.coreJava.day01.solved;
+package day01.solved;
 
 /**
  * @author Vinit Gore

@@ -1,10 +1,9 @@
 /**
  * 
  */
-package com.fssa.coreJava.day01.solved2;
+package day01.solved2;
 
-import com.fssa.coreJava.day01.solved.Bicycle;
-//import com.fssa.coreJava.day01.solved.*;
+import day01.solved.Bicycle;
 
 /**
  * @author Vinit Gore
