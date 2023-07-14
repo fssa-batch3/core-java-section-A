@@ -10,7 +10,7 @@ import java.time.LocalDate;
  *
  **/
 
-class Animal {
+abstract class Animal {
 	// Attributes
 	private String name;
 	private int age;
@@ -50,13 +50,8 @@ class Animal {
 	}
 
 	// Behavior
-	public void speaks() {
-		System.out.println("Roar!!!");
-	}
-
-	public void eats() {
-		System.out.println("Eats flesh!");
-	}
+	abstract public void speaks();
+	abstract public void eats() ;
 
 	public void sleeps() {
 		System.out.println("Sleeping!");
@@ -84,12 +79,27 @@ class Lion extends Animal {
 	public void hunts() {
 		System.out.println("Hunt other animals!");
 	}
+	
+	public void speaks() {
+		System.out.println("Roar!!!");
+	}
+	
+	public void eats() {
+		System.out.println("Eats flesh!");
+	}
 
 }
 
 class Giraffe extends Animal {
 	private int height;
-
+	
+	public void speaks() {
+		System.out.println("Hum!!!");
+	}
+	
+	public void eats() {
+		System.out.println("Eats leaves!");
+	}
 }
 
 public class AnimalSolved {
