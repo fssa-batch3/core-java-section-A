@@ -31,6 +31,11 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>com.fssa.learnJava.project.taskapp</groupId>
+			<artifactId>taskapp</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 

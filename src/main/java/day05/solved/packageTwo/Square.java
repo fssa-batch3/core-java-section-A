@@ -25,6 +25,10 @@ public class Square extends Rectangle {
 		try {
 		Square square = new Square(1.0);
 		System.out.println(square.numberOfSides);
+		square.calculateArea();
+		
+		Rectangle rectangle = new Rectangle(1.0, 1.0);
+//		rectangle.calculateArea(); 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

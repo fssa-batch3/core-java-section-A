@@ -7,6 +7,8 @@ package day05.solved.packageOne;
  * @author Vinit Gore
  *
  **/
+
+// Any closed-side figure with number of sides > 2
 public abstract class Polygon {
 	protected int numberOfSides;
 	
@@ -20,5 +22,5 @@ public abstract class Polygon {
 	}
 	
 	
-	public abstract double calculateArea();
+	protected abstract double calculateArea();
 }
