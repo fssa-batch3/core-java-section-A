@@ -19,6 +19,7 @@ public class ArrayListDemo {
 		cityList.add("Chennai");
 		cityList.add("Bangalore");
 		cityList.add("Mumbai");
+		
 
 		// Display the city names
 		for (Object object : cityList) {
