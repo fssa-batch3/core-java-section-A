@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Account implements Comparable<Account> {
+class Account implements Comparable<Account>{
 
 	private String accNo;
 	private String name;
@@ -51,7 +51,7 @@ class Account implements Comparable<Account> {
 	@Override
 	public int compareTo(Account o) {
 
-		if (balance == o.getBalance()) {
+		if (this.balance == o.getBalance()) {
 			return 0;
 		} else {
 			if (this.balance > o.getBalance()) {

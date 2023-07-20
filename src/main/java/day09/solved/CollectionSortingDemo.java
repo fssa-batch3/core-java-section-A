@@ -11,10 +11,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class CollectionSortingDemo {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ArrayList<String> cityNames = new ArrayList<String>();
 		cityNames.add("Delhi");
+		cityNames.add("bangalore");
 		cityNames.add("Chennai");
+		cityNames.add("123");
 		cityNames.add("Bangalore");
 
 		System.out.println("Before Sort:" + cityNames);
