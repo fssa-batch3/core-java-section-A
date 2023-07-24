@@ -32,7 +32,7 @@ public class UserInsertQuery {
         Statement stmt = connection.createStatement();
          
         // Step 03: Execute Insert Query
-        String query ="INSERT INTO USERS (user_name, email_id, additional_info, password) VALUES (\"vinit_gore\",\"vinit.gore@ctr.freshworks.com\",\"Instructor FSSA\", \"password007\")";
+        String query ="INSERT INTO user (username, email, password) VALUES (\"vinit_gore\",\"vinit.gore@ctr.freshworks.com\", \"password007\")";
         int rows = stmt.executeUpdate(query);
         System.out.println("No of rows inserted :" + rows );
          
