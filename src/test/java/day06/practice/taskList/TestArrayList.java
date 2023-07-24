@@ -4,6 +4,7 @@
 package day06.practice.taskList;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 /**
  * @author Vinit Gore
@@ -16,16 +17,29 @@ public class TestArrayList {
 		Task task2 = new Task("Task 2", LocalDate.of(2023, 07, 24), 1);
 		Task task3 = new Task("Task 1", LocalDate.of(2023, 07, 25), 2);
 		Task task4 = new Task("Task 4", LocalDate.of(2023, 07, 22), 2);
-		
-		TaskList taskListObject = new TaskList();
-		taskListObject.addToTaskList(task1);
-		taskListObject.addToTaskList(task2);
-		taskListObject.addToTaskList(task3);
-		taskListObject.addToTaskList(task4);
+//		
+//		TaskList taskListObject = new TaskList();
+//		taskListObject.addToTaskList(task1);
+//		taskListObject.addToTaskList(task2);
+//		taskListObject.addToTaskList(task3);
+//		taskListObject.addToTaskList(task4);
 		
 //		System.out.println("ArrayList of tasks: " + taskList);
-		System.out.println("Printing taskList:");
-		for(Task task: taskListObject.getTaskList()) {
+//		System.out.println("Printing taskList:");
+//		for(Task task: taskListObject.getTaskList()) {
+//			System.out.println(task);
+//		}
+//		
+		
+		
+		TaskList taskListObject = new TaskList();
+		taskListObject.taskList = new ArrayList();
+		taskListObject.taskList.add(task1);
+		taskListObject.taskList.add(task2);
+		taskListObject.taskList.add(task3);
+		taskListObject.taskList.add(task4);
+		
+		for(Task task: taskListObject.taskList) {
 			System.out.println(task);
 		}
 		

@@ -15,24 +15,24 @@ import java.util.HashSet;
 
 public class TaskList {
 	
-	private ArrayList<Task> taskList;
+	public ArrayList<Task> taskList;
 	
 	/**
 	 * @param taskList
 	 */
-	public TaskList() {
-		this.taskList = new ArrayList<Task>();
-	}
-
-	public ArrayList<Task> getTaskList() {
-		return taskList;
-	}
-
-	public void setTaskList(ArrayList<Task> taskList) {
-		this.taskList = taskList;
-	}
-
-	public boolean addToTaskList(Task t) {
-		return this.taskList.add(t);
-	}
+//	public TaskList() {
+//		this.taskList = new ArrayList<Task>();
+//	}
+//
+//	public ArrayList<Task> getTaskList() {
+//		return taskList;
+//	}
+//
+//	public void setTaskList(ArrayList<Task> taskList) {
+//		this.taskList = taskList;
+//	}
+//
+//	public boolean addToTaskList(Task t) {
+//		return this.taskList.add(t);
+//	}
 }
