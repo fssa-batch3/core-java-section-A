@@ -36,6 +36,14 @@
 			<artifactId>taskapp</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
+
+
 	</dependencies>
 
 
