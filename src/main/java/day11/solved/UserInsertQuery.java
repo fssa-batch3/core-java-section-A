@@ -26,7 +26,7 @@ public class UserInsertQuery {
 
 	public static int createUser(String username, String email, String password) throws SQLException {
 		// Step 01: Get connection
-		Connection connection = ConnectionUtil.getConnection();
+		Connection connection = ConnectionUtil.getMyConnection();
 		System.out.println(connection);
 
 		// Step 02: Create a Statement
@@ -38,7 +38,7 @@ public class UserInsertQuery {
 		pst.setString(1, username);
 		pst.setString(2, email);
 		pst.setString(3, password);
-		int rows = pst.executeUpdate(query);
+		int rows = pst.executeUpdate();
 		System.out.println("No of rows inserted :" + rows);
 
 		// Step 04: close the connection resources

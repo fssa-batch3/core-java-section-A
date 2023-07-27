@@ -15,8 +15,10 @@ public class Task implements Comparable<Task>{
 	private String taskName;
 	private LocalDate deadline;
     private int priority;
+    private String status; // Status can be "PENDING" / "COMPLETED"
     
-    /**
+    
+	/**
 	 * @param taskName
 	 * @param deadline
 	 * @param priority
@@ -27,6 +29,24 @@ public class Task implements Comparable<Task>{
 		this.priority = priority;
 	}
 	
+	/**
+	 * @param id2
+	 * @param name
+	 * @param status2
+	 */
+	public Task(int id, String name, String status) {
+		this.id = id;
+		this.taskName = name;
+		this.status = status;
+	}
+
+	/**
+	 * 
+	 */
+	public Task() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getId() {
     	return id;
     }
@@ -52,41 +72,23 @@ public class Task implements Comparable<Task>{
 	public void setDeadline(LocalDate deadline) {
 		this.deadline = deadline;
 	}
-//	@Override
-//	public int hashCode() {
-//		final int prime = 31;
-//		int result = 1;
-//		result = prime * result + ((deadline == null) ? 0 : deadline.hashCode());
-//		result = prime * result + ((taskName == null) ? 0 : taskName.hashCode());
-//		return result;
-//	}
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (this == obj)
-//			return true;
-//		if (obj == null)
-//			return false;
-//		if (getClass() != obj.getClass())
-//			return false;
-//		Task other = (Task) obj;
-//		if (deadline == null) {
-//			if (other.deadline != null)
-//				return false;
-//		} else if (!deadline.equals(other.deadline))
-//			return false;
-//		if (taskName == null) {
-//			if (other.taskName != null)
-//				return false;
-//		} else if (!taskName.equals(other.taskName))
-//			return false;
-//		return true;
-//	}
-	@Override
+	
+	/**
+	 * @return
+	 */
+	public String getStatus() {
+		return status;
+	}
+	
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	public int hashCode() {
 		return Objects.hash(deadline, taskName);
 	}
 	
-	@Override
+
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -98,15 +100,17 @@ public class Task implements Comparable<Task>{
 		return Objects.equals(deadline, other.deadline) && Objects.equals(taskName, other.taskName);
 	}
 	
-	@Override
 	public String toString() {
 		return "Task [taskName=" + taskName + ", deadline=" + deadline + ", priority=" + priority + "]";
 	}
 	
-	@Override
+
 	public int compareTo(Task other) {
 		// compareTo code here
 		return 0;
 	}
+
+	
+
     
 }

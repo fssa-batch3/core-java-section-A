@@ -22,7 +22,7 @@ public class TestConnectionUtil {
 	@Test
 	public void testGetConnectionSuccess() {
 		try {
-			Connection connection = ConnectionUtil.getConnection();
+			Connection connection = ConnectionUtil.getMyConnection();
 //			 if (connection != null)
 			assertNotNull(connection);
 		} catch (SQLException e) {

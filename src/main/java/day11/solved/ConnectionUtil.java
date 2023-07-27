@@ -16,7 +16,7 @@ import java.sql.SQLException;
 
 public class ConnectionUtil {
 
-	public static Connection getConnection() throws SQLException {
+	public static Connection getMyConnection() throws SQLException {
 
 		Connection con = null;
 		String url = "jdbc:mysql://localhost:3306/project";

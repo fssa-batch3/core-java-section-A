@@ -31,6 +31,7 @@ public class TestCreateUser {
 		
 	}
 	
+	// The main method can be converted to this function
 	@Test
 	public void testCreateUserSuccess() {
 		UserInsertQuery uiq = new UserInsertQuery();
