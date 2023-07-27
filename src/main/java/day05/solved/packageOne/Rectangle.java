@@ -14,6 +14,7 @@ public class Rectangle extends Polygon {
 	
 	public Rectangle() throws Exception {
 		super(4);
+		System.out.println("Calling Parent Default constructor");
 	}
 	
 	public Rectangle(double length, double breadth) throws Exception {
